@@ -21,7 +21,14 @@ public class Client{
 		logger.info(r2.util());
 
 
-
+		if (r1 != r2) {
+		   if (r2 != r3) {
+		      if (r1 != r3) {
+			 r2 = r3;
+		      }
+		   }
+		}
+		
 		pool.releaseReusable(r2);
 		r3= pool.acquireReusable();
 
